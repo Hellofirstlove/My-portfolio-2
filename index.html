@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saiful Islam | IT Engineer</title>
+    <meta name="description" content="Portfolio of Saiful Islam — Full-Stack Web Developer & Competitive Programmer. Projects, skills, CP profiles, and more.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=JetBrains+Mono:wght@300;400;500;700&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+</head>
+
+<body>
+    <!-- Particles Background Canvas -->
+    <canvas id="particles"></canvas>
+
+    <!-- Scroll Progress Bar -->
+    <div id="progress"></div>
+
+    <!-- ═══ NAVIGATION ═══════════════════════════════ -->
+    <nav id="nav">
+        <a href="#hero" class="nav-logo">&lt;<span>dev</span>/&gt;</a>
+        <button class="nav-hamburger" id="hamburger" aria-label="Menu">
+            <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#cp">CP</a></li>
+            <li><a href="#certificates">Certificates</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <a href="#contact" class="nav-cta">Hire Me</a>
+    </nav>
+
+    <!-- ═══ MOBILE MENU ══════════════════════════════ -->
+    <div class="mobile-menu" id="mobile-menu">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#cp">CP</a>
+        <a href="#certificates">Certificates</a>
+        <a href="#contact" class="mobile-cta">Hire Me</a>
+    </div>
+
+    <!-- ═══ HERO SECTION ═════════════════════════════ -->
+    <section id="hero">
+        <div class="container">
+            <div class="hero-grid">
+                <div class="hero-content">
+                    <div class="hero-eyebrow">
+                        <span class="dot"></span>
+                        Available for opportunities
+                    </div>
+                    <h1 class="hero-name">
+                        <span class="glitch" data-text="Hello,">Hello,</span><br>
+                        <span class="glitch" data-text="I'm Saiful">I'm Saiful</span><br>
+                        <span class="glitch" data-text="Islam." style="color:var(--cyan)">Islam.</span>
+                    </h1>
+                    <div class="hero-title">
+                        $ <span class="typed-wrapper" id="typed"></span><span id="cursor-blink" style="animation:blink 1s infinite;color:var(--cyan)">▋</span>
+                    </div>
+                    <p class="hero-tagline">
+                        I build fast, scalable web applications and solve complex algorithmic challenges. Code is my craft — I take it seriously.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn-primary">
+                            <svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 3l14 9-14 9V3z"/></svg>
+                            View Projects
+                        </a>
+                        <a href="#contact" class="btn-outline">
+                            <svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+                            Get in Touch
+                        </a>
+                    </div>
+                </div>
+
+                <div class="hero-visual">
+                    <div class="hero-code-window">
+                        <div class="window-bar">
+                            <div class="window-dot"></div>
+                            <div class="window-dot"></div>
+                            <div class="window-dot"></div>
+                            <span class="window-title">main.cpp — competitive_dev</span>
+                        </div>
+                        <div class="window-body">
+                            <div><span class="line-num">01</span><span class="cm">// Profile: SaifulIslam_dev</span></div>
+                            <div><span class="line-num">02</span><span class="kw">#include</span> <span class="str">&lt;developer.h&gt;</span></div>
+                            <div><span class="line-num">03</span></div>
+                            <div><span class="line-num">04</span><span class="kw">class</span> <span class="fn">Developer</span> <span class="op">{</span></div>
+                            <div><span class="line-num">05</span>&nbsp;&nbsp;<span class="kw">public:</span></div>
+                            <div><span class="line-num">06</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="var">string</span> name <span class="op">=</span> <span class="str">"Saiful Islam"</span><span class="op">;</span></div>
+                            <div><span class="line-num">07</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="var">int</span> cf_rating <span class="op">=</span> <span class="num">1847</span><span class="op">;</span></div>
+                            <div><span class="line-num">08</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="var">int</span> lc_solved <span class="op">=</span> <span class="num">600</span><span class="op">+</span><span class="op">;</span></div>
+                            <div><span class="line-num">09</span></div>
+                            <div><span class="line-num">10</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="fn">vector</span><span class="op">&lt;</span><span class="var">string</span><span class="op">&gt;</span> stack <span class="op">= {</span></div>
+                            <div><span class="line-num">11</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="str">"React"</span><span class="op">,</span> <span class="str">"Node.js"</span><span class="op">,</span></div>
+                            <div><span class="line-num">12</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="str">"C++"</span><span class="op">,</span> <span class="str">"TypeScript"</span></div>
+                            <div><span class="line-num">13</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="op">};</span></div>
+                            <div><span class="line-num">14</span></div>
+                            <div><span class="line-num">15</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="kw">bool</span> <span class="fn">isHireable</span><span class="op">() {</span> <span class="kw">return</span> <span class="num">true</span><span class="op">; }</span></div>
+                            <div><span class="line-num">16</span><span class="op">};</span></div>
+                        </div>
+                    </div>
+
+                    <div class="hero-badges">
+                        <div class="badge">
+                            <span class="badge-icon">⚡</span>
+                            Codeforces&nbsp;<span class="badge-val">1847</span>
+                        </div>
+                        <div class="badge">
+                            <span class="badge-icon">🧩</span>
+                            LeetCode&nbsp;<span class="badge-val">600+</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══ ABOUT SECTION ════════════════════════════ -->
+    <section id="about">
+        <div class="container">
+            <div class="reveal">
+                <div class="section-tag">About Me</div>
+                <h2 class="section-title">Who am I, <em>exactly?</em></h2>
+            </div>
+            <div class="about-grid">
+                <div class="about-body reveal">
+                    <p>I'm a <strong>full-stack web developer</strong> and <span class="accent">competitive programmer</span> who thrives at the intersection of elegant code and algorithmic thinking. I've been building things on the web since I was 16 — and competing on Codeforces since 17.</p>
+                    <p>My approach to development is shaped by CP: I think about edge cases, performance, and correctness before I type a single line. That mindset turns into <strong>cleaner APIs, faster frontends, and fewer production bugs.</strong></p>
+                    <p>When I'm not pushing code, I'm usually reading papers on distributed systems, grinding contest problems, or exploring new open-source tooling. I believe great software is built with <strong>curiosity, discipline, and a deep love for the craft.</strong></p>
+                    <div class="about-stats">
+                        <div class="stat-card">
+                            <div class="stat-num">15+</div>
+                            <div class="stat-label">Projects Shipped</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-num">600+</div>
+                            <div class="stat-label">Problems Solved</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-num">3yr</div>
+                            <div class="stat-label">Web Dev Experience</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-num">∞</div>
+                            <div class="stat-label">Curiosity Level</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-visual reveal" style="transition-delay:0.15s">
+                    <div class="terminal-line"><span class="prompt">~$</span><span class="cmd"> whoami</span></div>
+                    <div class="terminal-line"><span class="out">saiful_islam // full-stack dev + cp</span></div>
+                    <div class="terminal-line"><span class="prompt">~$</span><span class="cmd"> cat passion.txt</span></div>
+                    <div class="terminal-line"><span class="out">Building things that matter ✦</span></div>
+                    <div class="terminal-line"><span class="prompt">~$</span><span class="cmd"> git log --oneline -1</span></div>
+                    <div class="terminal-line"><span class="out" style="color:var(--cyan)">a3f9c1e → shipped: new project live 🚀</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══ SKILLS SECTION ═══════════════════════════ -->
+    <section id="skills">
+        <div class="container">
+            <div class="reveal">
+                <div class="section-tag">Technical Arsenal</div>
+                <h2 class="section-title">My <em>Skills</em></h2>
+            </div>
+            <div class="skills-grid">
+                <!-- Frontend -->
+                <div class="skill-group reveal">
+                    <div class="skill-group-title cyan"><span class="group-icon">🌐</span> Frontend</div>
+                    <div class="skill-tags">
+                        <span class="skill-tag"><span class="tag-level"></span>HTML5</span>
+                        <span class="skill-tag"><span class="tag-level"></span>CSS3 / Sass</span>
+                        <span class="skill-tag"><span class="tag-level"></span>JavaScript</span>
+                        <span class="skill-tag"><span class="tag-level"></span>TypeScript</span>
+                        <span class="skill-tag"><span class="tag-level"></span>React.js</span>
+                        <span class="skill-tag"><span class="tag-level"></span>Next.js</span>
+                        <span class="skill-tag"><span class="tag-level"></span>Tailwind CSS</span>
+                        <span class="skill-tag"><span class="tag-level"></span>Redux</span>
+                    </div>
+                </div>
+
+                <!-- Backend -->
+                <div class="skill-group reveal" style="transition-delay:0.1s">
+                    <div class="skill-group-title cyan"><span class="group-icon">⚙️</span> Backend & Data</div>
+                    <div class="skill-tags">
+                        <span class="skill-tag"><span class="tag-level"></span>Node.js</span>
+                        <span class="skill-tag"><span class="tag-level"></span>Express</span>
+                        <span class="skill-tag"><span class="tag-level"></span>MongoDB</span>
+                        <span class="skill-tag"><span class="tag-level"></span>PostgreSQL</span>
+                        <span class="skill-tag"><span class="tag-level"></span>REST APIs</span>
+                        <span class="skill-tag"><span class="tag-level"></span>GraphQL</span>
+                        <span class="skill-tag"><span class="tag-level"></span>Docker</span>
+                        <span class="skill-tag"><span class="tag-level"></span>Redis</span>
+                    </div>
+                </div>
+
+                <!-- Algorithms & DS -->
+                <div class="skill-group reveal" style="transition-delay:0.2s">
+                    <div class="skill-group-title violet"><span class="group-icon">🧠</span> Algorithms & DS</div>
+                    <div class="skill-tags">
+                        <span class="skill-tag violet">C++</span>
+                        <span class="skill-tag violet">Dynamic Programming</span>
+                        <span class="skill-tag violet">Graph Theory</span>
+                        <span class="skill-tag violet">Trees & BST</span>
+                        <span class="skill-tag violet">Segment Trees</span>
+                        <span class="skill-tag violet">Binary Search</span>
+                        <span class="skill-tag violet">Greedy</span>
+                        <span class="skill-tag violet">Number Theory</span>
+                        <span class="skill-tag violet">Hashing</span>
+                        <span class="skill-tag violet">BFS / DFS</span>
+                        <span class="skill-tag violet">Divide & Conquer</span>
+                        <span class="skill-tag violet">Two Pointers</span>
+                    </div>
+                </div>
+
+                <!-- Tools -->
+                <div class="skill-group reveal" style="transition-delay:0.3s">
+                    <div class="skill-group-title violet"><span class="group-icon">🛠</span> Tools & Workflow</div>
+                    <div class="skill-tags">
+                        <span class="skill-tag violet">Git / GitHub</span>
+                        <span class="skill-tag violet">VS Code</span>
+                        <span class="skill-tag violet">Linux / Bash</span>
+                        <span class="skill-tag violet">Figma</span>
+                        <span class="skill-tag violet">Postman</span>
+                        <span class="skill-tag violet">Vercel</span>
+                        <span class="skill-tag violet">CI/CD</span>
+                        <span class="skill-tag violet">Jest</span>
+                        <span class="skill-tag violet">Webpack</span>
+                        <span class="skill-tag violet">Vite</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══ PROJECTS SECTION ═════════════════════════ -->
+    <section id="projects">
+        <div class="container">
+            <div class="reveal">
+                <div class="section-tag">Built by Me</div>
+                <h2 class="section-title">Selected <em>Projects</em></h2>
+            </div>
+
+            <!-- Projects Grid -->
+            <div class="projects-grid">
+
+                <!-- Featured Card -->
+                <div class="project-card featured reveal">
+                    <div class="project-header">
+                        <div class="project-icon">🚀</div>
+                        <div style="display:flex;align-items:center;gap:12px">
+                            <span class="project-featured-tag">Featured</span>
+                            <div class="project-links">
+                                <a href="#" class="project-link" title="GitHub">
+                                    <svg width="14" height="14" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.38.6.1.82-.26.82-.57v-2c-3.34.72-4.04-1.6-4.04-1.6-.54-1.38-1.33-1.75-1.33-1.75-1.08-.74.08-.72.08-.72 1.2.08 1.83 1.23 1.83 1.23 1.06 1.82 2.8 1.3 3.48.99.1-.77.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.3.47-2.38 1.23-3.22-.12-.3-.53-1.52.12-3.17 0 0 1-.32 3.3 1.23a11.5 11.5 0 016 0c2.28-1.55 3.28-1.23 3.28-1.23.65 1.65.24 2.87.12 3.17.77.84 1.23 1.92 1.23 3.22 0 4.61-2.8 5.63-5.48 5.92.43.37.82 1.1.82 2.22v3.29c0 .32.22.68.83.57C20.56 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                                </a>
+                                <a href="#" class="project-link" title="Live">
+                                    <svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-title">DevCollabHub</div>
+                    <p class="project-desc">A real-time collaborative coding platform where developers can pair-program, share code snippets live, and join themed rooms by language or problem type. Features include syntax highlighting, a live presence indicator, and persistent session history.</p>
+                    <div class="project-stack">
+                        <span class="stack-tag">React</span>
+                        <span class="stack-tag">Node.js</span>
+                        <span class="stack-tag">Socket.IO</span>
+                        <span class="stack-tag">MongoDB</span>
+                        <span class="stack-tag">Redis</span>
+                        <span class="stack-tag">Docker</span>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="project-card reveal" style="transition-delay:0.1s">
+                    <div class="project-header">
+                        <div class="project-icon">🧩</div>
+                        <div class="project-links">
+                            <a href="#" class="project-link"><svg width="14" height="14" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.38.6.1.82-.26.82-.57v-2c-3.34.72-4.04-1.6-4.04-1.6-.54-1.38-1.33-1.75-1.33-1.75-1.08-.74.08-.72.08-.72 1.2.08 1.83 1.23 1.83 1.23 1.06 1.82 2.8 1.3 3.48.99.1-.77.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.3.47-2.38 1.23-3.22-.12-.3-.53-1.52.12-3.17 0 0 1-.32 3.3 1.23a11.5 11.5 0 016 0c2.28-1.55 3.28-1.23 3.28-1.23.65 1.65.24 2.87.12 3.17.77.84 1.23 1.92 1.23 3.22 0 4.61-2.8 5.63-5.48 5.92.43.37.82 1.1.82 2.22v3.29c0 .32.22.68.83.57C20.56 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z"/></svg></a>
+                            <a href="#" class="project-link"><svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
+                        </div>
+                    </div>
+                    <div class="project-title">AlgoVisualizer</div>
+                    <p class="project-desc">Interactive visualization engine for 30+ sorting, graph, and tree algorithms. Built with a custom animation pipeline and step-by-step explanation mode.</p>
+                    <div class="project-stack">
+                        <span class="stack-tag">React</span>
+                        <span class="stack-tag">TypeScript</span>
+                        <span class="stack-tag">Canvas API</span>
+                        <span class="stack-tag">Framer Motion</span>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="project-card reveal" style="transition-delay:0.2s">
+                    <div class="project-header">
+                        <div class="project-icon">💬</div>
+                        <div class="project-links">
+                            <a href="#" class="project-link"><svg width="14" height="14" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.38.6.1.82-.26.82-.57v-2c-3.34.72-4.04-1.6-4.04-1.6-.54-1.38-1.33-1.75-1.33-1.75-1.08-.74.08-.72.08-.72 1.2.08 1.83 1.23 1.83 1.23 1.06 1.82 2.8 1.3 3.48.99.1-.77.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.3.47-2.38 1.23-3.22-.12-.3-.53-1.52.12-3.17 0 0 1-.32 3.3 1.23a11.5 11.5 0 016 0c2.28-1.55 3.28-1.23 3.28-1.23.65 1.65.24 2.87.12 3.17.77.84 1.23 1.92 1.23 3.22 0 4.61-2.8 5.63-5.48 5.92.43.37.82 1.1.82 2.22v3.29c0 .32.22.68.83.57C20.56 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z"/></svg></a>
+                            <a href="#" class="project-link"><svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
+                        </div>
+                    </div>
+                    <div class="project-title">NexusChat</div>
+                    <p class="project-desc">End-to-end encrypted messaging app with room-based conversations, file sharing, and read receipts. Built with JWT auth and WebSocket connections.</p>
+                    <div class="project-stack">
+                        <span class="stack-tag">Next.js</span>
+                        <span class="stack-tag">Express</span>
+                        <span class="stack-tag">PostgreSQL</span>
+                        <span class="stack-tag">WebSocket</span>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="project-card reveal" style="transition-delay:0.3s">
+                    <div class="project-header">
+                        <div class="project-icon">📊</div>
+                        <div class="project-links">
+                            <a href="#" class="project-link"><svg width="14" height="14" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.38.6.1.82-.26.82-.57v-2c-3.34.72-4.04-1.6-4.04-1.6-.54-1.38-1.33-1.75-1.33-1.75-1.08-.74.08-.72.08-.72 1.2.08 1.83 1.23 1.83 1.23 1.06 1.82 2.8 1.3 3.48.99.1-.77.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.3.47-2.38 1.23-3.22-.12-.3-.53-1.52.12-3.17 0 0 1-.32 3.3 1.23a11.5 11.5 0 016 0c2.28-1.55 3.28-1.23 3.28-1.23.65 1.65.24 2.87.12 3.17.77.84 1.23 1.92 1.23 3.22 0 4.61-2.8 5.63-5.48 5.92.43.37.82 1.1.82 2.22v3.29c0 .32.22.68.83.57C20.56 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z"/></svg></a>
+                            <a href="#" class="project-link"><svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
+                        </div>
+                    </div>
+                    <div class="project-title">StockSense</div>
+                    <p class="project-desc">A portfolio tracking dashboard pulling live market data via REST APIs, with candlestick charts, watchlists, and smart alerting via email/webhook.</p>
+                    <div class="project-stack">
+                        <span class="stack-tag">React</span>
+                        <span class="stack-tag">Node.js</span>
+                        <span class="stack-tag">Chart.js</span>
+                        <span class="stack-tag">REST API</span>
+                    </div>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="project-card reveal" style="transition-delay:0.4s">
+                    <div class="project-header">
+                        <div class="project-icon">🔐</div>
+                        <div class="project-links">
+                            <a href="#" class="project-link"><svg width="14" height="14" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.38.6.1.82-.26.82-.57v-2c-3.34.72-4.04-1.6-4.04-1.6-.54-1.38-1.33-1.75-1.33-1.75-1.08-.74.08-.72.08-.72 1.2.08 1.83 1.23 1.83 1.23 1.06 1.82 2.8 1.3 3.48.99.1-.77.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.3.47-2.38 1.23-3.22-.12-.3-.53-1.52.12-3.17 0 0 1-.32 3.3 1.23a11.5 11.5 0 016 0c2.28-1.55 3.28-1.23 3.28-1.23.65 1.65.24 2.87.12 3.17.77.84 1.23 1.92 1.23 3.22 0 4.61-2.8 5.63-5.48 5.92.43.37.82 1.1.82 2.22v3.29c0 .32.22.68.83.57C20.56 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z"/></svg></a>
+                        </div>
+                    </div>
+                    <div class="project-title">AuthKit</div>
+                    <p class="project-desc">A drop-in authentication library with OAuth2, JWT refresh tokens, rate limiting, and role-based access control. Published on npm with 1.2k downloads.</p>
+                    <div class="project-stack">
+                        <span class="stack-tag">TypeScript</span>
+                        <span class="stack-tag">OAuth2</span>
+                        <span class="stack-tag">JWT</span>
+                        <span class="stack-tag">npm</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══ COMPETITIVE PROGRAMMING SECTION ═══════════ -->
+    <section id="cp">
+        <div class="container">
+            <div class="reveal">
+                <div class="section-tag">Competitive Programming</div>
+                <h2 class="section-title">My <em>CP Profiles</em></h2>
+            </div>
+            <div class="cp-grid reveal">
+                <!-- Codeforces -->
+                <div class="cp-card">
+                    <div class="cp-logo-wrapper">⚡</div>
+                    <div class="cp-platform">Codeforces</div>
+                    <div class="cp-handle">@SaifulIslam_cf</div>
+                    <div class="cp-rating-display">1847</div>
+                    <div class="cp-rating-label">Max Rating</div>
+                    <span class="cp-badge specialist">Expert</span>
+                </div>
+                <!-- LeetCode -->
+                <div class="cp-card">
+                    <div class="cp-logo-wrapper">🧩</div>
+                    <div class="cp-platform">LeetCode</div>
+                    <div class="cp-handle">@saiful_islam</div>
+                    <div class="cp-rating-display">600+</div>
+                    <div class="cp-rating-label">Problems Solved</div>
+                    <span class="cp-badge knight">Knight</span>
+                </div>
+                <!-- CodeChef -->
+                <div class="cp-card">
+                    <div class="cp-logo-wrapper">👨‍🍳</div>
+                    <div class="cp-platform">CodeChef</div>
+                    <div class="cp-handle">@saifulislam_cc</div>
+                    <div class="cp-rating-display">1962</div>
+                    <div class="cp-rating-label">Current Rating</div>
+                    <span class="cp-badge top">4★ Coder</span>
+                </div>
+            </div>
+
+            <div class="cp-stats-row reveal" style="transition-delay:0.2s">
+                <div class="cp-stat">
+                    <div class="cp-stat-num" style="color:var(--cyan)">Top 5%</div>
+                    <div class="cp-stat-lbl">LeetCode Global</div>
+                </div>
+                <div class="cp-stat">
+                    <div class="cp-stat-num" style="color:var(--violet)">200+</div>
+                    <div class="cp-stat-lbl">Contests Entered</div>
+                </div>
+                <div class="cp-stat">
+                    <div class="cp-stat-num" style="color:var(--green)">3</div>
+                    <div class="cp-stat-lbl">ICPC Participations</div>
+                </div>
+                <div class="cp-stat">
+                    <div class="cp-stat-num" style="color:var(--cyan)">1000+</div>
+                    <div class="cp-stat-lbl">Total Problems</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══ CERTIFICATES SECTION ═════════════════════ -->
+    <section id="certificates">
+        <div class="container">
+            <div class="reveal">
+                <div class="section-tag">Achievements</div>
+                <h2 class="section-title">My <em>Certificates</em></h2>
+            </div>
+            <div class="certificates-grid reveal">
+
+                <div class="certificate-card">
+                    <div class="certificate-img-wrapper">
+                        <img src="udemy.jpg" alt="Web Development Bootcamp Certificate" class="certificate-img">
+                        <div class="certificate-overlay">
+                            <span class="certificate-zoom"><i class="fas fa-search-plus"></i></span>
+                        </div>
+                    </div>
+                    <div class="certificate-caption">
+                        <h3>The Complete Web Development Bootcamp</h3>
+                        <p>Udemy</p>
+                    </div>
+                </div>
+
+                <div class="certificate-card">
+                    <div class="certificate-img-wrapper">
+                        <img src="udemy.jpg" alt="React Masterclass Certificate" class="certificate-img">
+                        <div class="certificate-overlay">
+                            <span class="certificate-zoom"><i class="fas fa-search-plus"></i></span>
+                        </div>
+                    </div>
+                    <div class="certificate-caption">
+                        <h3>React — The Complete Guide</h3>
+                        <p>Udemy</p>
+                    </div>
+                </div>
+
+                <div class="certificate-card">
+                    <div class="certificate-img-wrapper">
+                        <img src="udemy.jpg" alt="Node.js Course Certificate" class="certificate-img">
+                        <div class="certificate-overlay">
+                            <span class="certificate-zoom"><i class="fas fa-search-plus"></i></span>
+                        </div>
+                    </div>
+                    <div class="certificate-caption">
+                        <h3>Node.js, Express & MongoDB Bootcamp</h3>
+                        <p>Udemy</p>
+                    </div>
+                </div>
+
+                <div class="certificate-card">
+                    <div class="certificate-img-wrapper">
+                        <img src="udemy.jpg" alt="JavaScript Algorithms Certificate" class="certificate-img">
+                        <div class="certificate-overlay">
+                            <span class="certificate-zoom"><i class="fas fa-search-plus"></i></span>
+                        </div>
+                    </div>
+                    <div class="certificate-caption">
+                        <h3>JavaScript Algorithms & Data Structures</h3>
+                        <p>Udemy</p>
+                    </div>
+                </div>
+
+                <div class="certificate-card">
+                    <div class="certificate-img-wrapper">
+                        <img src="udemy.jpg" alt="TypeScript Course Certificate" class="certificate-img">
+                        <div class="certificate-overlay">
+                            <span class="certificate-zoom"><i class="fas fa-search-plus"></i></span>
+                        </div>
+                    </div>
+                    <div class="certificate-caption">
+                        <h3>Understanding TypeScript</h3>
+                        <p>Udemy</p>
+                    </div>
+                </div>
+
+                <div class="certificate-card">
+                    <div class="certificate-img-wrapper">
+                        <img src="udemy.jpg" alt="Docker & Kubernetes Certificate" class="certificate-img">
+                        <div class="certificate-overlay">
+                            <span class="certificate-zoom"><i class="fas fa-search-plus"></i></span>
+                        </div>
+                    </div>
+                    <div class="certificate-caption">
+                        <h3>Docker & Kubernetes: The Practical Guide</h3>
+                        <p>Udemy</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══ CONTACT SECTION ══════════════════════════ -->
+    <section id="contact">
+        <div class="container">
+            <div class="contact-inner reveal">
+                <div class="section-tag">Contact</div>
+                <h2 class="contact-headline">Let's build something <em>remarkable.</em></h2>
+                <p class="contact-sub">Whether you have a project in mind, want to collaborate, or just want to talk code — my inbox is open. I reply within 24 hours.</p>
+                <a href="mailto:hello@saifulislam.dev" class="contact-email">
+                    <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                    hello@saifulislam.dev
+                </a>
+                <div class="social-links">
+                    <a href="#" class="social-link">
+                        <svg width="14" height="14" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.38.6.1.82-.26.82-.57v-2c-3.34.72-4.04-1.6-4.04-1.6-.54-1.38-1.33-1.75-1.33-1.75-1.08-.74.08-.72.08-.72 1.2.08 1.83 1.23 1.83 1.23 1.06 1.82 2.8 1.3 3.48.99.1-.77.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.3.47-2.38 1.23-3.22-.12-.3-.53-1.52.12-3.17 0 0 1-.32 3.3 1.23a11.5 11.5 0 016 0c2.28-1.55 3.28-1.23 3.28-1.23.65 1.65.24 2.87.12 3.17.77.84 1.23 1.92 1.23 3.22 0 4.61-2.8 5.63-5.48 5.92.43.37.82 1.1.82 2.22v3.29c0 .32.22.68.83.57C20.56 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                        GitHub
+                    </a>
+                    <a href="#" class="social-link">
+                        <svg width="14" height="14" fill="currentColor" viewBox="0 0 24 24"><path d="M19 3a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h14m-.5 15.5v-5.3a3.26 3.26 0 00-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 011.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 001.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 00-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg>
+                        LinkedIn
+                    </a>
+                    <a href="#" class="social-link">⚡ Codeforces</a>
+                    <a href="#" class="social-link">🧩 LeetCode</a>
+                    <a href="#" class="social-link">
+                        <svg width="14" height="14" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.73-8.835L1.254 2.25H8.08l4.259 5.63 5.905-5.63zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                        Twitter / X
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══ FOOTER ═══════════════════════════════════ -->
+    <footer>
+        <div class="footer-copy">© 2025 Saiful Islam. All rights reserved.</div>
+        <div class="footer-made">Built with <span>❤ + C++</span></div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="particales.js"></script>
+</body>
+
+</html>
